@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 
 // 透過props傳入參數得到父母元件傳來的屬性值
 function HelloWorld(props) {
+  console.log(props)
   // 解構賦值
   const { name, text, clickMethod } = props
 
@@ -10,6 +11,8 @@ function HelloWorld(props) {
       <h1 onClick={clickMethod}>
         {name}, {text}
       </h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
     </>
   )
 }

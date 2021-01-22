@@ -1,16 +1,13 @@
-import { useState } from 'react'
+import HelloWorld from './components/HelloWorld'
+import HelloWorldClass from './components/HelloWorldClass'
 
 function App() {
-  const [total, setTotal] = useState(0) // 解構賦值
-
   return (
-    <h1
-      onClick={() => {
-        setTotal(total + 1)
-      }}
-    >
-      {total}
-    </h1>
+    <>
+      {/* 利用props屬性傳資料給子女元件 */}
+      <HelloWorld text="你好" name="Amy" />
+      <HelloWorldClass text="你好" name="Amy" />
+    </>
   )
 }
 

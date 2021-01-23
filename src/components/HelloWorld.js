@@ -1,18 +1,22 @@
 import PropTypes from 'prop-types'
 
+
+// 函式型寫法
 // 透過props傳入參數得到父母元件傳來的屬性值
 function HelloWorld(props) {
   console.log(props)
-  // 解構賦值
-  const { name, text, clickMethod } = props
+  const { name, text, clickMethod } = props // 解構賦值
 
   return (
     <>
-      <h1 onClick={clickMethod}>
+      <h1>HelloWorld</h1>
+      {/* 沒有const 解構賦值的寫法 */}
+      {/* <h2>
+        {props.name}, {props.text}
+      </h2> */}
+      <h2 onClick={clickMethod}>
         {name}, {text}
-      </h1>
-      <h2>h2</h2>
-      <h3>h3</h3>
+      </h2>
     </>
   )
 }

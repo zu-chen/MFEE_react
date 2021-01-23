@@ -7,6 +7,7 @@ function HelloWorldList(props) {
 
   return (
     <>
+      <h1>HelloWorldList</h1>
       {/* 陣列直接輸出成為array.join('') */}
       {names}
       {/* {[<h2>123</h2>, <button>按我</button>, <a href="123.com">goo</a>]} */}

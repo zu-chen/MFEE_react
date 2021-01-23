@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+// 類別型寫法
 class HelloWorldClass extends React.Component {
   // 建構式要得到props要寫成這樣
   constructor(props) {
@@ -14,9 +15,12 @@ class HelloWorldClass extends React.Component {
     const { name, text } = this.props
 
     return (
-      <h1>
-        {name}, {text}
-      </h1>
+      <>
+        <h1>HelloWorldClass</h1>
+        <h2>
+          {name}, {text}
+        </h2>
+      </>
     )
   }
 }

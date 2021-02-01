@@ -1,9 +1,9 @@
-import TodoApp from './components/TodoApp'
+import Birthday from './components/2_Birthday'
 
 function App() {
   return (
     <>
-      <TodoApp />
+      <Birthday />
     </>
   )
 }

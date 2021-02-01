@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 
-
 // 函式型寫法
 // 透過props傳入參數得到父母元件傳來的屬性值
 function HelloWorld(props) {

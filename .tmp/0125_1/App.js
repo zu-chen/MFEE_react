@@ -1,9 +1,9 @@
-import TodoApp from './components/TodoApp'
+import Parent from './components/1_Parent'
 
 function App() {
   return (
     <>
-      <TodoApp />
+      <Parent />
     </>
   )
 }

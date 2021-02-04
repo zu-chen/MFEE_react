@@ -14,7 +14,6 @@ import ProductCategory from './pages/ProductCategory'
 import Member from './pages/Member'
 import Student from './pages/Student'
 import Counter from './pages/Counter'
-import CounterRedux from './pages/CounterRedux'
 import Register from './pages/Register'
 import Dumb from './pages/Dumb'
 
@@ -72,9 +71,6 @@ function App() {
               <Switch>
                 <Route path="/counter">
                   <Counter />
-                </Route>
-                <Route path="/counter-redux">
-                  <CounterRedux />
                 </Route>
                 <Route path="/dumb">
                   <Dumb />

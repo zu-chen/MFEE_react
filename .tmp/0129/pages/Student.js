@@ -1,4 +1,4 @@
-//import { data } from '../data/'
+import { data } from '../data/'
 import { useState, useEffect } from 'react'
 import CoverSpinner from '../components/CoverSpinner'
 
@@ -15,15 +15,12 @@ function Student(props) {
   const [searchInput, setSearchInput] = useState('')
   // const [userStartToSearch, setUserStartToSearch] = useState(false)
 
-  const getDataFromServer = async () => {
+  // 模擬componentDidMout
+  useEffect(() => {
     // 先開起載入指示器
     setIsLoading(true)
 
     // 模擬和伺服器要資料
-    const response = await fetch('http://localhost:5555/students', {
-      method: 'get',
-    })
-    const data = await response.json()
 
     // 最後設定到狀態中
     setStudents(data)
@@ -33,11 +30,6 @@ function Student(props) {
     setTimeout(() => {
       setIsLoading(false)
     }, 2000)
-  }
-
-  // 模擬componentDidMout
-  useEffect(() => {
-    getDataFromServer()
   }, [])
 
   // 模擬componentDidMount + componentDidUpdate
